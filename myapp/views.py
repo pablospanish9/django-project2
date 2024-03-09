@@ -12,4 +12,4 @@ def services(request):
   return HttpResponse("<h1>Services Page!</h1>")
 
 def contact(request):
-  return HttpResponse("<h1>Contact Page!</h1>")
+  return HttpResponse("<h1>Contact Page</h1>")
