@@ -14,10 +14,10 @@ def about(request):
   return HttpResponse("<h1>About Page</h1>")
 
 def services(request):
-  return HttpResponse("<h1>Services Page!</h1>")
+  return render(request, 'services.html')
 
 def contact(request):
-  return HttpResponse("<h1>Contact Page</h1>")
+  return render(request, 'contact.html')
 
 def function_view(request):
     context = {

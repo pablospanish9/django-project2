@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block content %}
+
+<h1>Our Services</h1>
+
+  <section id="service-photo">
+    <p><img src="{% static 'images/interpreter.jpg' %}" alt="People talking through an interpreter "width="550"></p>
+</section>
+
+<section id="services">
+    <h2>Services We Offer</h2>
+
+    <div id="website-developer">
+        <h3>Website Developer</h3>
+        <p>I provide professional website building services to create a custom, responsive, and user-friendly digital presence for your business or personal brand.</p>
+    </div>
+
+    <div id="translation">
+        <h3>Translation</h3>
+        <p>With expertise in multiple languages, I offer precise and culturally sensitive translation services to help you communicate effectively across borders.</p>
+    </div>
+
+    <div id="localization">
+        <h3>Localization</h3>
+        <p>I specialize in localization services, adapting your content and products to align with the cultural and linguistic nuances of your target audience.</p>
+    </div>
+</section>
+{% endblock %}

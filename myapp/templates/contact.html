@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>Contact Us</h1>
+
+<section id="contact-photo">
+  <p><img src="{% static 'images/typing.jpg' %}" alt="Person Typing on a Keyboard "width="500"></p>
+  
+<p>If you have any questions or would like to get in touch, please don't hesitate to contact us. Welcome to our Contact Us page! Whether you have questions, feedback, or just want to say hello, we're here to listen. Our team is dedicated to providing you with the support you need to ensure your experience with us is seamless and enjoyable. Don't hesitate to reach out with any inquiries or comments. Your thoughts are valuable to us as we strive to improve and tailor our services to meet your expectations. Connect with us through the form below, give us a call, or drop us an email. We're looking forward to hearing from you and are committed to responding promptly and effectively.</p>
+
+
+</section>
+
+<section id="contact-details">
+    <h2>Contact Details</h2>
+
+    <div id="phone">
+        <h3>Phone Number</h3>
+        <p>(123) 456-7890</p>
+    </div>
+
+    <div id="email">
+        <h3>Email Address</h3>
+        <p>contact@mywebsite.com</p>
+    </div>
+</section>
+{% endblock %}
