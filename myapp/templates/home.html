@@ -2,9 +2,13 @@
 {% load static %}
 {% block content %}
 <div class="container">
-    <h1>Home</h1>
+ <div class="jumbotron">
+    <!-- <h1>Home</h1> -->
+  <h1>{{ title }}</h1>
+  <p>{{ page_content }}</p>
     <p>Welcome to our website! Learn more about eclipses here.</p>
     <p><img src="{% static 'images/eclipse.jpg' %}" alt="Eclipse Image " width="300"></p>
     <p>Welcome to our community of eclipse enthusiasts! Our passion for celestial events brings us together as we eagerly anticipate the next solar eclipse in 2024. We are a dedicated group of amateur astronomers, skywatchers, and nature lovers committed to experiencing the awe-inspiring moment when the moon passes between the Earth and the sun, casting a shadow that briefly turns day into night.</p>
 </div>
+  </div>
 {% endblock %}

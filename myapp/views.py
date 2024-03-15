@@ -58,6 +58,29 @@ class ClassView(BaseView):
       })
       return context
 
+# these two classes are addedd to the urls.py file for the home and about pages
+class HomeView(BaseView):
+  template_name = 'home.html'
+
+  def get_context_data(self, **kwargs):
+      context = super().get_context_data(**kwargs)
+      context.update({
+          'title': 'Home',
+          'page_content': '(class-based view for the Home page).',
+      })
+      return context
+
+class AboutView(BaseView):
+  template_name = 'about.html'
+
+  def get_context_data(self, **kwargs):
+      context = super().get_context_data(**kwargs)
+      context.update({
+          'title': 'About',
+          'page_content': '(class-based view for the About page)',
+      })
+      return context
+
 
 class ThemeView(BaseView):
   template_name = 'theme.html'
